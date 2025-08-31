@@ -1,0 +1,141 @@
+.blog-show-page {
+    background-color: #0D1821;
+    color: #D9E6F1;
+    font-family: sans-serif;
+    padding: 2rem 1rem;
+    line-height: 1.8;
+  }
+  
+  .blog-container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .blog-container img.cover {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-container h1 {
+    color: #B4CDED;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  
+  .blog-container .blog-body img {
+    max-width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(180, 205, 237, 0.2);
+  }
+  
+  .blog-author {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  
+  .blog-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .blog-author .info {
+    color: #B4CDED;
+    font-size: 0.95rem;
+  }
+  
+  .blog-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .blog-tags span {
+    background-color: #344966;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #B4CDED;
+    cursor: pointer;
+  }
+  
+  .comments-section {
+    margin-top: 3rem;
+  }
+  
+  .comments-section h2 {
+    color: #4918db;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comment {
+    background-color: #1c2736;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .comment .comment-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #B4CDED;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comment .comment-body {
+    margin-bottom: 0.5rem;
+  }
+  
+  .comment .comment-actions {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .comment .comment-actions button {
+    background: none;
+    border: none;
+    color: #B4CDED;
+    cursor: pointer;
+  }
+  
+  .comment .replies {
+    margin-top: 0.7rem;
+    padding-left: 1rem;
+    border-left: 2px solid #344966;
+  }
+  
+  .comment-form {
+    margin-top: 2rem;
+  }
+  
+  .comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    resize: vertical;
+    background-color: #344966;
+    color: #fff;
+  }
+  
+  .comment-form button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #DB1821;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }

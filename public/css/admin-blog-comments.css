@@ -1,0 +1,84 @@
+body {
+    font-family: Vazirmatn, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+  }
+  
+  .admin-comments-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .admin-comments-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-right: 4px solid #8e44ad;
+    padding-right: 10px;
+  }
+  
+  .admin-comments-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .admin-comments-header,
+  .admin-comments-row {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+  
+  .admin-comments-header {
+    background-color: #ede2f3;
+    font-weight: bold;
+    color: #5e3370;
+  }
+  
+  .admin-comments-row {
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+    transition: background 0.2s;
+  }
+  
+  .admin-comments-row:hover {
+    background-color: #f0eef5;
+  }
+  
+  .comment-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+  }
+  
+  .comment-actions button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  .approve-btn {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .comment-actions button:hover {
+    opacity: 0.9;
+  }

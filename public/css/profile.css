@@ -1,0 +1,102 @@
+.profile-page {
+    background-color: #0D1821;
+    color: #D9E6F1;
+    font-family: sans-serif;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .profile-header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #DB1821;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #B4CDED;
+  }
+  
+  .profile-info p {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    color: #D9E6F1;
+  }
+  
+  .tags-section {
+    margin-bottom: 2rem;
+  }
+  
+  .tags-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #DB1821;
+  }
+  
+  .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag {
+    background-color: #344966;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #B4CDED;
+    cursor: default;
+  }
+  
+  .lists-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  
+  .list-container {
+    flex: 1 1 45%;
+    background-color: #344966;
+    border-radius: 15px;
+    padding: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .list-container h3 {
+    margin-top: 0;
+    color: #DB1821;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+  }
+  
+  .list-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2a3a56;
+    cursor: pointer;
+    color: #D9E6F1;
+
+  }
+  
+  .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-item:hover {
+    background-color: #3b597e;
+  }

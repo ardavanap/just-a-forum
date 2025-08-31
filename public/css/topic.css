@@ -1,0 +1,56 @@
+.topics-page {
+    background-color: #0D1821;
+    color: #D9E6F1;
+    font-family: sans-serif;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+  }
+  
+  .topics-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .topic-card {
+    display: flex;
+    background-color: #344966;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 10px rgba(180, 205, 237, 0.2);
+  }
+  
+  .topic-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .topic-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+  
+  .topic-info {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .topic-info h3 {
+    margin: 0;
+    color: #B4CDED;
+    font-size: 1.3rem;
+  }
+  
+  .topic-info p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #D9E6F1;
+    line-height: 1.4;
+  }

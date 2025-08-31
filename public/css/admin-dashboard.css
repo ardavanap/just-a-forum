@@ -1,0 +1,51 @@
+
+.container {
+  background-color: #1e293b;
+  height: 100vh;
+
+}
+
+.admin-dashboard {
+    padding: 40px 20px;
+    
+  }
+  
+  .admin-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #cfcfcf;
+  }
+  
+  .admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .admin-card {
+    background: #344966;
+    border: 1px solid #324560;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #111827;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .admin-card:hover {
+    background-color: #374151;
+    transform: translateY(-3px);
+  }
+  
+  .admin-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #90a5d2;
+  }
+  
+  .admin-card p {
+    font-size: 14px;
+    color: #d2d2d2;
+  }

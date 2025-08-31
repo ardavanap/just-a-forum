@@ -1,0 +1,79 @@
+.login-page {
+    background-color: #0D1821;
+    color: #D9E6F1;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .login-form-container {
+    background-color: #344966;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(219, 24, 33, 0.4);
+  }
+  
+  .login-form-container h2 {
+    margin-bottom: 1.5rem;
+    color: #DB1821;
+    text-align: center;
+  }
+  
+  .login-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #B4CDED;
+  }
+  
+  .login-form-container input[type="text"],
+  .login-form-container input[type="password"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+    background-color: #1C2736;
+    color: #D9E6F1;
+  }
+  
+  .login-form-container input::placeholder {
+    color: #B4CDED;
+  }
+  
+  .login-form-container .login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #DB1821;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form-container .login-btn:hover {
+    background-color: #B4161B;
+  }
+  
+  .login-form-container .extra-links {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .login-form-container .extra-links a {
+    color: #B4CDED;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .login-form-container .extra-links a:hover {
+    color: #D9E6F1;
+  }

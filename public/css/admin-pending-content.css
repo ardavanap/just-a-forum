@@ -1,0 +1,32 @@
+.pending-section {
+    margin-top: 30px;
+  }
+  
+  .pending-section h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: #1e40af;
+  }
+  
+  .pending-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+  }
+  
+  .btn-approve {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .btn-approve:hover {
+    background-color: #059669;
+  }

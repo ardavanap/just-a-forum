@@ -1,0 +1,56 @@
+.verify-page {
+    background-color: #0D1821;
+    min-height: 100vh;
+    color: #D9E6F1;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .verify-card {
+    background-color: #344966;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(180, 205, 237, 0.3);
+    text-align: center;
+  }
+  
+  .verify-card h2 {
+    color: #B4CDED;
+    margin-bottom: 1rem;
+  }
+  
+  .verify-card input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem 0;
+  }
+  
+  .verify-card button {
+    background-color: #DB1821;
+    color: #D9E6F1;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .verify-card button:hover {
+    background-color: #B4161B;
+  }
+  
+  .timer {
+    margin-top: 1rem;
+    color: #B4CDED;
+    font-size: 0.95rem;
+  }

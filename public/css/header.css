@@ -1,0 +1,51 @@
+header {
+  /* margin-bottom: 50px; */
+  background-color: #344966;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D9E6F1;
+  font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #B4CDED;
+  cursor: default;
+  user-select: none;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: #D9E6F1;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #B4CDED;
+  color: #0D1821;
+}
+
+header nav a.signup {
+  border: 2px solid #D9E6F1;
+}
+
+header nav a.signup:hover {
+  background-color: transparent;
+  color: #D9E6F1;
+  border-color: #B4CDED;
+}

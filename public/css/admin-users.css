@@ -1,0 +1,98 @@
+body {
+    font-family: Vazirmatn, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+  }
+  
+  .admin-users-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .admin-users-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-right: 4px solid #3498db;
+    padding-right: 10px;
+  }
+  
+  .admin-users-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .admin-users-header,
+  .admin-users-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1.5fr 1.5fr 2fr;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+  
+  .admin-users-header {
+    background-color: #eaf1f8;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .admin-users-row {
+    background-color: #fdfdfd;
+    border: 1px solid #dce3ea;
+    transition: background 0.2s;
+  }
+  
+  .admin-users-row:hover {
+    background-color: #f0f6fb;
+  }
+  
+  .status-active {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .status-suspended {
+    color: #c0392b;
+    font-weight: bold;
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .user-actions button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  .suspend-btn {
+    background-color: #f1c40f;
+    color: #fff;
+  }
+  
+  .unsuspend-btn {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .user-actions button:hover {
+    opacity: 0.9;
+  }
