@@ -20,7 +20,7 @@ class BlogFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
-            'title' => fake('fa_IR')->word(),
+            'title' => fake('fa_IR')->text(30),
             'content' => fake()->paragraph(18),
             'created_at' => now(),
             'updated_at' => now()

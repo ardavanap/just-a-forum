@@ -26,7 +26,7 @@
             <x-slot:user> {{ $bestComment->user->nickname }} </x-slot>
             <x-slot:date> {{ $bestComment->created_at }} </x-slot>
             <x-slot:content> {{ $bestComment->content }} </x-slot>
-            <x-slot:commentID> {{ $comment->id }} </x-slot>
+            <x-slot:commentID> {{ $bestComment->id }} </x-slot>
             <x-slot:likes> {{ $bestCommentlikes }} </x-slot>
           </x-cards.question-comment-best>
         @endif

@@ -14,18 +14,12 @@ use App\Models\User;
 class questionController extends Controller
 {
 
-    
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         return redirect('/topic', '301');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         $topics = Topic::all();
@@ -33,9 +27,7 @@ class questionController extends Controller
         return view('questions.questionCreate', compact('topics'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -60,9 +52,7 @@ class questionController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(string $id)
     {
         $question = Question::find($id);
@@ -73,7 +63,7 @@ class questionController extends Controller
 
         if($bestComment?->id != null)
         {
-            $bestCommentlikes = QuestionCommentLike::find($bestComment->id)?->count();
+            $bestCommentlikes = QuestionCommentLike::where('question_comment_id', '=',$bestComment->id)?->get()->count();
         }
         else
         {
@@ -86,9 +76,6 @@ class questionController extends Controller
             ->whereNot('approved', '=', 1)
             ->get();
 
-        // TODO: bayad ravesh peyda knm bara  tedade like e har comment. 
-            // vali tu variable e jdid nbshe o tu view byd anjamesh bdm.
-
             return view('questions.questionShow', compact(
             'question',
             'bestCommentlikes',
@@ -97,9 +84,7 @@ class questionController extends Controller
             ));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(string $id)
     {
         $topics = Topic::all();
@@ -108,9 +93,7 @@ class questionController extends Controller
         return view('questions.questionEdit', compact('question', 'topics'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, string $id)
     {
            
@@ -139,9 +122,7 @@ class questionController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    
     public function destroy(string $id)
     {
         $isOwner = Question::find($id)->user_id == auth()->id(); 

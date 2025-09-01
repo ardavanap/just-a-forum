@@ -1,67 +1,91 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## وب اپلیکیشن انجمن justAForum
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+اولین وبسایتیه که نوشتم و برای چالش برانگیزتر شدن، قابلیت های بیشتری سعی کردم داشته باشه.
+برای همین، با اینکه قرار بود یک انجمن باشه، بخش بلاگ رو هم اضافه کردم که تفاوت کمی داره.
 
-## About Laravel
+بخش فرانت-اند وبسایت خیلی ساده و پر مشکله چون AI طراحی کرده.
+    
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### قابلیت ها
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### ❔انجمن
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+بخشی که یک موضوع انتخاب میشه و سوالات مناسب در رابطه با اون موضوع نمایش داده میشه
 
-## Learning Laravel
+- ساخت سوال که زیر مجموع یک موضوع هست
+- ادیت سوال
+- کامنت گذاشتن برای جواب دادن به سوال
+....- کامنت میتونه تایید بشه به عنوان جواب و متمایز نمایش داده بشه
+....- لایک کردن کامنت ها
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![صفحه سوال](https://github.com/ardavanap/just-a-forum/README-pics/branch/question-show.png?raw=true)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### 📘بلاگ
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+بلاگ ها دسته بندی نشدن اما هرکدوم تگ های خودشون رو میتونن داشته باشن .
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+![صفحه بلاگ](https://github.com/ardavanap/just-a-forum/README-pics/branch/blog-index.png?raw=true)
 
-## Contributing
+- ساخت بلاگ
+- ادیت بلاگ
+- کامنت
+....- ریپلای کردن کامنت
+....- لایک کردن کامنت و ریپلای ها
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![صفحه نمایش بلاگ](https://github.com/ardavanap/just-a-forum/README-pics/branch/blog-show.png?raw=true)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+#### 👤داشبورد ادمین
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+با داشبورد ادمین میشه خیلی از محتواها و کاربران رو مدیریت کرد.
 
+![صفحه داشبورد ادمین](https://github.com/ardavanap/just-a-forum/README-pics/branch/admin-dashboard.png?raw=true)
+
+-  محدود یا رفع محدودیت کاربران
+- حذف یا ویرایش بلاگ ها
+- حذف یا ویرایش سوالات انجمن
+-  حذف کامنت بلاگ ها و سوالات انجمن
+
+![صفحه مدیریت یوزر ادمین](https://github.com/ardavanap/just-a-forum/README-pics/branch/admin-user-management.png?raw=true)
+
+![صفحه مدیریت بلاگ ادمین](https://github.com/ardavanap/just-a-forum/README-pics/branch/admin-blog-management.png?raw=true)
+
+---
+
+#### 👥پروفایل
+
+صفحه پروفایل هر کاربر، فعالیت و علاقه مندی های اون رو نشون میده.
+
+![صفحه پروفایل](https://github.com/ardavanap/just-a-forum/README-pics/branch/profile.png?raw=true)
+
+- شامل تگ های مورد علاقه، سوالات و بلاگ های کاربر میشه
+- قابلیت حذف و اضافه کردن تگ
+- قابلیت تغییر مشخصات کاربر
+
+
+![صفحه بلاگ](https://github.com/ardavanap/just-a-forum/README-pics/branch/profile-edit.png?raw=true)
+![صفحه ادیت تگ'](https://github.com/ardavanap/just-a-forum/README-pics/branch/tag-edit.png?raw=true)
+
+---
+
+### آپدیت های آینده
+
+به دلیل بزرگ بودن و پر کار بودن سایت و وقت محدود، قابلیت های زیادی کامل نیستن یا جا موندن و باید اضافه بشن. مثل:
+
+- اضافه شدن لاگر ها
+- اضافه شدن sanitizer ها
+- اضفه شدن قابلیت نمایش پروفایل دیگران
+- قابلیت آپلود و نمایش عکس در بخش های مختلف
+- جلوگیری از فعالیت کاربر در صورت محدود شدن حساب
+- به تعلیق در اومدن هر نوع کامت و بلاگ و ... در صورت استفاده از کلمات نامناسب
+- اضافه کردن تگ ها به هر بلاگ
+- قابلیت حذف بلاگ یا سوال یا کامنت توسط کاربر

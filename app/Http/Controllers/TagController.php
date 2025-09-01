@@ -37,10 +37,10 @@ class TagController extends Controller
         if($userTags = User::find(auth()->id())->tags()->get())
         {
 
-        $allTags = Tag::all();
+        $allTags = Tag::paginate(8);
         $tagsUserDoesNotHave = $allTags?->diff($userTags);
         
-        return view('tagEdit', compact('userTags', 'tagsUserDoesNotHave'));
+        return view('tagEdit', compact('userTags', 'tagsUserDoesNotHave', 'allTags'));
         }
     }
 

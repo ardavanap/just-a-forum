@@ -87,7 +87,7 @@ h1 {
         @foreach ($tagsUserDoesNotHave as $tag)
             <div class="topic-card" data-id="{{ $tag->id }}">{{ $tag->title }}</div>
           @endforeach
-        
+        {{ $allTags->links() }}
       </div>
       <input type="hidden" name="selectedTags" id="selectedTopics">
       <button type="submit" class="submit-btn">تایید</button>
