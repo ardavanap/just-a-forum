@@ -19,7 +19,7 @@
 ....- کامنت میتونه تایید بشه به عنوان جواب و متمایز نمایش داده بشه
 ....- لایک کردن کامنت ها
 
-![صفحه سوال](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/question-show.png?raw=true)
+![صفحه سوال](README-pics/question-show.png?raw=true)
 
 ---
 
@@ -29,7 +29,7 @@
 
 بلاگ ها دسته بندی نشدن اما هرکدوم تگ های خودشون رو میتونن داشته باشن .
 
-![صفحه بلاگ](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/blog-index.png?raw=true)
+![صفحه بلاگ](README-pics/blog-index.png?raw=true)
 
 - ساخت بلاگ
 - ادیت بلاگ
@@ -37,7 +37,7 @@
 ....- ریپلای کردن کامنت
 ....- لایک کردن کامنت و ریپلای ها
 
-![صفحه نمایش بلاگ](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/blog-show.png?raw=true)
+![صفحه نمایش بلاگ](README-pics/blog-show.png?raw=true)
 
 ---
 
@@ -48,16 +48,16 @@
 
 با داشبورد ادمین میشه خیلی از محتواها و کاربران رو مدیریت کرد.
 
-![صفحه داشبورد ادمین](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/admin-dashboard.png?raw=true)
+![صفحه داشبورد ادمین](README-pics/admin-dashboard.png)
 
 -  محدود یا رفع محدودیت کاربران
 - حذف یا ویرایش بلاگ ها
 - حذف یا ویرایش سوالات انجمن
 -  حذف کامنت بلاگ ها و سوالات انجمن
 
-![صفحه مدیریت یوزر ادمین](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/admin-user-management.png?raw=true)
+![صفحه مدیریت یوزر ادمین](README-pics/admin-user-management.png?raw=true)
 
-![صفحه مدیریت بلاگ ادمین](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/admin-blog-management.png?raw=true)
+![صفحه مدیریت بلاگ ادمین](README-pics/admin-blog-managment.png)
 
 ---
 
@@ -65,15 +65,15 @@
 
 صفحه پروفایل هر کاربر، فعالیت و علاقه مندی های اون رو نشون میده.
 
-![صفحه پروفایل](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/profile.png?raw=true)
+![صفحه پروفایل](README-pics/Profile.png)
 
 - شامل تگ های مورد علاقه، سوالات و بلاگ های کاربر میشه
 - قابلیت حذف و اضافه کردن تگ
 - قابلیت تغییر مشخصات کاربر
 
 
-![صفحه بلاگ](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/profile-edit.png?raw=true)
-![صفحه ادیت تگ'](https://github.com/ardavanap/just-a-forum/tree/main/README-pics/tag-edit.png?raw=true)
+![صفحه بلاگ](README-pics/profile-edit.png?raw=true)
+![صفحه ادیت تگ'](README-pics/tag-edit.png?raw=true)
 
 ---
 
