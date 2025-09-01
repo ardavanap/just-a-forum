@@ -1,18 +1,18 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-use App\Http\Controllers\topicController;
-use App\Http\Controllers\loginController;
-use App\Http\Controllers\profileController;
-use App\Http\Controllers\blogController;
 use App\Http\Controllers\questionController;
-use App\Http\Controllers\signupController;
-use App\Http\Controllers\TagController;
-use App\Http\Controllers\homeController;
-use App\Http\Controllers\adminController;
+use App\Http\Controllers\profileController;
 use App\Http\Controllers\commentController;
+use App\Http\Controllers\signupController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\adminController;
+use App\Http\Controllers\topicController;
+use App\Http\Controllers\blogController;
+use App\Http\Controllers\homeController;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\TagController;
+use Illuminate\Support\Facades\Route;
 
 
 

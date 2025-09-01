@@ -18,7 +18,6 @@ class RollSeeder extends Seeder
             ->insert([
                 ['title' => 'admin', 'description' => 'has all privilages'],
                 ['title' => 'user', 'description' => 'has user privilages'],
-                ['title' => 'guest', 'description' => 'has almost no privilages']
             ]);
     }
 }
