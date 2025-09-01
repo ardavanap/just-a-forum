@@ -29,18 +29,5 @@ class QuestionComment extends Model
     {
         return $this->hasMany(QuestionCommentLike::class);
     }
-
-
-
-
-
-    public function getIsOwnerAttribute() {
-
-        if($this->user_id == auth()->id()) {
-            return true;
-        }
-
-        return false;
-    }
     
 }

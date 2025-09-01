@@ -31,17 +31,4 @@ class BlogComment extends Model
         return $this->hasMany(BlogCommentLike::class);
     }
 
-
-
-
-    public function getIsOwnerAttribute() {
-
-        if($this->user_id == auth()->id()) {
-            return true;
-        }
-
-        return false;
-    }
-
-
 }

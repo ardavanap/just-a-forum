@@ -115,14 +115,6 @@ class User extends Authenticatable implements MustVerifyEmail
             return false;
     }
 
-    // public static function isOwner(){
-    //     if()
-    // }
-
-
-
-
-
                                                         /** End Of Costume Methods Section **/
 //____________________________________________________________________________________________________________________
 }

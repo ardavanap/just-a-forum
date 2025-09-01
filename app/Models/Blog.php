@@ -47,14 +47,6 @@ class Blog extends Model
 
 //____________________________________________________________________________________________________________________
                                                         /** Start Of Costume Methods Section **/
-
-    public function getIsOwnerAttribute() {
-
-        if($this->user_id == auth()->id()) {
-            return true;
-        }
-
-        return false;
-    }
+                                                        
 
 }
