@@ -16,6 +16,10 @@
       {!! $question->content !!} <br><br>
       <span>کاربر: {{ $question->user->nickname }}</span>
       <span> <br>تاریخ: {{ $question->created_at }} </span>
+      @can('edit', $question)
+        <a href="/question/{{ $question->id }}/edit"> <span class='edit-and-delete-buttons'> ویرایش </span> </a>
+        <a href=""> <span class='edit-and-delete-buttons'> حذف </span> </a>
+      @endcan
     </div>
   
     <div class="answers-section">

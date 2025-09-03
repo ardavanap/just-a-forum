@@ -13,12 +13,12 @@
       <div class="blog-author">
         <img src="/images/users/user1.jpg" alt="author">
         <div class="info">
+          @can('edit', $blog)
+            <a href="/blog/{{ $blog->id }}/edit"> <span class='edit-and-delete-buttons'> ویرایش </span> </a>
+            <a href=""> <span class='edit-and-delete-buttons'> حذف </span> </a>
+          @endcan
           <div>نویسنده: {{ $author }} </div>
           <div>تاریخ: {{ $blog->created_at }}۹</div>
-          @can('edit', $blog)
-            <a href="/blog/{{ $blog->id }}/edit"> <span> ویرایش </span> </a>
-            <a href=""> <span> حذف </span> </a>
-          @endcan
         </div>
       </div>
   

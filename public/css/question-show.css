@@ -157,3 +157,11 @@
   color: white;
   cursor: pointer;
 }
+
+.edit-and-delete-buttons {
+  background-color: #4918db;
+  padding: 6px;
+  margin-left: 4px;
+  font-size: 0.85rem;
+  color: #B4CDED;
+}
