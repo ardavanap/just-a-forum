@@ -15,6 +15,10 @@
         <div class="info">
           <div>نویسنده: {{ $author }} </div>
           <div>تاریخ: {{ $blog->created_at }}۹</div>
+          @can('edit', $blog)
+            <a href="/blog/{{ $blog->id }}/edit"> <span> ویرایش </span> </a>
+            <a href=""> <span> حذف </span> </a>
+          @endcan
         </div>
       </div>
   

@@ -22,7 +22,7 @@
         <span class="tag"> {{ $tag->title }} </span>
       @endforeach
 
-      @if ($user->id == auth()->id())
+      @if(auth()->id() == $user->id)
         <a href="{{ route('tag.edit') }}" class="tag"> <strong> + </strong> </a>
       @endif
       

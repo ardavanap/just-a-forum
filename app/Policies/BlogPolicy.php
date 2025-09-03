@@ -12,17 +12,27 @@ class BlogPolicy
     /**
      * Determine whether the user can update the model.
      */
+    public function edit(User $user, Blog $blog): bool
+    {
+        return ($user->isAdmin()) || ($user->id == $blog->user_id);
+    }
+
+
     public function update(User $user, Blog $blog): bool
     {
-        return ($user->isAdmin()) || ($user == $blog->user_id);
+        return ($user->isAdmin()) || ($user->id == $blog->user_id);
     }
+
 
     /**
      * Determine whether the user can delete the model.
      */
     public function delete(User $user, Blog $blog): bool
     {
-        return ($user->isAdmin()) || ($user == $blog->user_id);
+        return ($user->isAdmin()) || ($user->id == $blog->user_id);
     }
+
+
+
 
 }

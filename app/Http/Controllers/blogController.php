@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\BlogComment;
 use App\Models\Blog;
 use App\Models\User;
+use Illuminate\Support\Facades\Gate;
+
 
 class blogController extends Controller
 {
@@ -70,14 +72,20 @@ class blogController extends Controller
     {
         $blog = Blog::find($id);
 
+        Gate::authorize('edit', $blog);
+
+        
+
         return view('blogs.edit', compact('blog'));
     }
 
  
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id, Blog $blog)
     {
-        
+
+        Gate::authorize('update', $blog);
+
         $validatedData = $request->validate([
             'title' => 'required',
             'body' => 'required'
@@ -102,8 +110,14 @@ class blogController extends Controller
 
 
 
-    public function destroy(string $id)
+    public function destroy(string $id, Blog $blog )
     {
+        Gate::authorize('delete', $blog);
+
+        if (auth()->user()->cannot('delete', $blog)){
+            abort(403);
+        }
+
         Blog::find($id)->delete();
 
         return redirect()->back();

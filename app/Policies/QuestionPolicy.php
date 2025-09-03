@@ -12,17 +12,24 @@ class QuestionPolicy
     /**
      * Determine whether the user can update the model.
      */
+    public function edit(User $user, Question $question): bool
+    {
+        return ($user->isAdmin()) || ($user->id == $question->user_id);
+    }
+
+
     public function update(User $user, Question $question): bool
     {
-        return ($user->isAdmin()) || ($user == $question->user_id);
+        return ($user->isAdmin()) || ($user->id == $question->user_id);
     }
+
 
     /**
      * Determine whether the user can delete the model.
      */
     public function delete(User $user, Question $question): bool
     {
-        return ($user->isAdmin()) || ($user == $question->user_id);
+        return ($user->isAdmin()) || ($user->id == $question->user_id);
     }
 
 }

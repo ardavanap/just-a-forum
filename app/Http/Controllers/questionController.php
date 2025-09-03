@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use App\Models\QuestionCommentLike;
 use App\Models\QuestionComment;
 use Illuminate\Http\Request;
@@ -30,6 +31,7 @@ class questionController extends Controller
 
     public function store(Request $request)
     {
+        
         $validatedData = $request->validate([
             'title' => 'required|max:80',
             'body' => 'required|max:900',
@@ -87,15 +89,24 @@ class questionController extends Controller
 
     public function edit(string $id)
     {
+
         $topics = Topic::all();
         $question = Question::find($id);
+
+        Gate::authorize('edit', $question);
+
+
 
         return view('questions.questionEdit', compact('question', 'topics'));
     }
 
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id, Question $question)
     {
+
+        if ($request->user()->cannot('update', $question)){
+            abort(403);
+        }
            
         $validatedData = $request->validate([
             'title' => 'required',
@@ -103,28 +114,29 @@ class questionController extends Controller
             'body' => 'required'
         ]);
         
-        $isOwner = Question::find($id)->user_id == auth()->id();
+    
         $topicId = Topic::where('title', '=', $validatedData['topic'])->first()->id; 
 
-        if(User::isAdmin() || $isOwner )
-        {
-            $question = Question::find($id);
+        $question = Question::find($id);
             
-            $question->update([
-                'title' => $validatedData['title'],
-                'topic_id' => $topicId,
-                'content' => $validatedData['body']
+        $question->update([
+            'title' => $validatedData['title'],
+            'topic_id' => $topicId,
+            'content' => $validatedData['body']
             ]);
             
             return view('questions.questionUpdateSuccess', compact('question'));
-        }else{
-            return 'you are not allowed to edit this Question.';
-        }
+
     }
 
     
-    public function destroy(string $id)
+    public function destroy(string $id, Question $question)
     {
+
+        if (auth()->user()->cannot('delete', $question)){
+            abort(403);
+        }
+
         $isOwner = Question::find($id)->user_id == auth()->id(); 
 
         if(User::isAdmin() || $isOwner )
