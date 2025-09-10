@@ -17,6 +17,9 @@
         @csrf
 
       </form>
+        @if((auth()->user()?->isAdmin() || $commentOwnerId->toHtml() == auth()->id()) )
+            <a href=""> <span class='edit-and-delete-buttons'> حذف </span> </a>
+        @endif
 
       </div>
   </div>

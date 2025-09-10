@@ -128,7 +128,10 @@ class commentController extends Controller
                 'commentID' => 'required',
             ]);
             
-            $isLiked = User::find(auth()->id())->questionCommentLike()->where('question_comment_id', '=', $validatedData['commentID'])->first();
+            $isLiked = User::find(auth()->id())
+                ->questionCommentLike()
+                ->where('question_comment_id', '=', $validatedData['commentID'])
+                ->first();
             
            if ($isLiked)
            {

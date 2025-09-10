@@ -16,10 +16,12 @@
 
       </form>
 
+      @if((auth()->user()?->isAdmin() || $commentOwnerId->toHtml() == auth()->id()) )
+        <a href=""> <span class='edit-and-delete-buttons'> حذف </span> </a>
+      @endif
 
 
-        @if (auth()->id())
-          
+        @auth  
         <button onclick="toggleReplyForm(this)">پاسخ</button>
 
           <div class="comment-form" style="display: none;">
@@ -31,7 +33,7 @@
           <button type='submit' class="send-reply">ارسال پاسخ</button>
           </form>
         </div>
-        @endif
+        @endauth
 
 
     </div>

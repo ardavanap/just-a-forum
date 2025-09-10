@@ -8,6 +8,7 @@ use App\Models\BlogComment;
 use App\Models\Blog;
 use App\Models\User;
 use Illuminate\Support\Facades\Gate;
+use App\Models\BlogCommentLike;
 
 
 class blogController extends Controller
@@ -55,16 +56,18 @@ class blogController extends Controller
     public function show(string $id)
     {
 
-                $blog = Blog::find($id);
-                $author = $blog->user->nickname;
+        $blog = Blog::find($id);
+        $author = $blog->user->nickname;
                 
-                $comments = BlogComment::where('blog_id', '=', $blog->id)->get();
+        $comments = BlogComment::where('blog_id', '=', $blog->id)->get();
 
-                return view('blogs.blogShow', compact([
-                    'blog',
-                    'author',
-                    'comments'
-                ]));
+
+
+        return view('blogs.blogShow', compact([
+            'blog',
+            'author',
+            'comments'
+        ]));
     }
 
 

@@ -99,3 +99,12 @@ Route::prefix('comment')->middleware('auth')->group(function (){
 Route::fallback(function () {
     return view('404');
 });
+
+// design pattern testing route
+
+Route::get('/staticfactory', function () {
+    App\designPatterns\staticFactory\client::run();
+});
+Route::get('/simplefactory', function () {
+    App\designPatterns\simpleFactory\client::run();
+});

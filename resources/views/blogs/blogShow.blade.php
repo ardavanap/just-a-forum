@@ -44,6 +44,7 @@
               <x-slot:commentID> {{ $comment->id }} </x-slot>
               <x-slot:blogId> {{ $blog->id }} </x-slot>
               <x-slot:likes> {{ $comment->blogCommentLike->count() }} </x-slot>
+              <x-slot:commentOwnerId> {{ $comment->user_id }} </x-slot>
             </x-cards.blog-comment>
 
 
@@ -58,6 +59,7 @@
                 <x-slot:comment> {{ $reply->content }} </x-slot>
                 <x-slot:commentID> {{ $reply->id }} </x-slot>
                 <x-slot:likes> {{ $reply->blogCommentLike->count() }} </x-slot>
+                <x-slot:commentOwnerId> {{ $comment->user_id }} </x-slot>
               </x-cards.reply>
               
             @endif
