@@ -1,91 +1,85 @@
-## وب اپلیکیشن انجمن justAForum
+## justAForum Web Application
 
-اولین وبسایتیه که نوشتم و برای چالش برانگیزتر شدن، قابلیت های بیشتری سعی کردم داشته باشه.
-برای همین، با اینکه قرار بود یک انجمن باشه، بخش بلاگ رو هم اضافه کردم که تفاوت کمی داره.
+This is the first website I’ve built, and to make it more challenging, I tried to add more features.  
+So, although it was supposed to be a simple forum, I added a blog section as well, which is quite similar.
 
-بخش فرانت-اند وبسایت خیلی ساده و پر مشکله چون AI طراحی کرده.
-    
----
-
-### قابلیت ها
-
-#### ❔انجمن
-
-بخشی که یک موضوع انتخاب میشه و سوالات مناسب در رابطه با اون موضوع نمایش داده میشه
-
-- ساخت سوال که زیر مجموع یک موضوع هست
-- ادیت سوال
-- کامنت گذاشتن برای جواب دادن به سوال
-....- کامنت میتونه تایید بشه به عنوان جواب و متمایز نمایش داده بشه
-....- لایک کردن کامنت ها
-
-![صفحه سوال](README-pics/question-show.png?raw=true)
+The website’s front-end is very simple and a bit problematic because it was designed by AI.
 
 ---
 
-#### 📘بلاگ
+### Features
 
+#### ❔Forum
 
+A section where you can choose a topic, and related questions about that topic are displayed.
 
-بلاگ ها دسته بندی نشدن اما هرکدوم تگ های خودشون رو میتونن داشته باشن .
+- Create a question (under a topic)
+- Edit a question
+- Comment to answer questions  
+....- A comment can be approved as an answer and displayed differently  
+....- Like comments
 
-![صفحه بلاگ](README-pics/blog-index.png?raw=true)
-
-- ساخت بلاگ
-- ادیت بلاگ
-- کامنت
-....- ریپلای کردن کامنت
-....- لایک کردن کامنت و ریپلای ها
-
-![صفحه نمایش بلاگ](README-pics/blog-show.png?raw=true)
+![Question Page](README-pics/question-show.png?raw=true)
 
 ---
 
+#### 📘Blog
 
+Blogs are not categorized, but each one can have its own tags.
 
+![Blog Page](README-pics/blog-index.png?raw=true)
 
-#### 👤داشبورد ادمین
+- Create a blog
+- Edit a blog
+- Comment  
+....- Reply to comments  
+....- Like comments and replies
 
-با داشبورد ادمین میشه خیلی از محتواها و کاربران رو مدیریت کرد.
-
-![صفحه داشبورد ادمین](README-pics/admin-dashboard.png)
-
--  محدود یا رفع محدودیت کاربران
-- حذف یا ویرایش بلاگ ها
-- حذف یا ویرایش سوالات انجمن
--  حذف کامنت بلاگ ها و سوالات انجمن
-
-![صفحه مدیریت یوزر ادمین](README-pics/admin-user-management.png?raw=true)
-
-![صفحه مدیریت بلاگ ادمین](README-pics/admin-blog-managment.png)
+![Blog Detail Page](README-pics/blog-show.png?raw=true)
 
 ---
 
-#### 👥پروفایل
+#### 👤Admin Dashboard
 
-صفحه پروفایل هر کاربر، فعالیت و علاقه مندی های اون رو نشون میده.
+Through the admin dashboard, you can manage most of the content and users.
 
-![صفحه پروفایل](README-pics/Profile.png)
+![Admin Dashboard Page](README-pics/admin-dashboard.png)
 
-- شامل تگ های مورد علاقه، سوالات و بلاگ های کاربر میشه
-- قابلیت حذف و اضافه کردن تگ
-- قابلیت تغییر مشخصات کاربر
+- Restrict or unrestrict users  
+- Delete or edit blogs  
+- Delete or edit forum questions  
+- Delete comments from blogs and forum questions
 
+![Admin User Management Page](README-pics/admin-user-management.png?raw=true)
 
-![صفحه بلاگ](README-pics/profile-edit.png?raw=true)
-![صفحه ادیت تگ'](README-pics/tag-edit.png?raw=true)
+![Admin Blog Management Page](README-pics/admin-blog-managment.png)
 
 ---
 
-### آپدیت های آینده
+#### 👥Profile
 
-به دلیل بزرگ بودن و پر کار بودن سایت و وقت محدود، قابلیت های زیادی کامل نیستن یا جا موندن و باید اضافه بشن. مثل:
+Each user’s profile page shows their activity and interests.
 
-- اضافه شدن لاگر ها
-- اضافه شدن sanitizer ها
-- اضفه شدن قابلیت نمایش پروفایل دیگران
-- قابلیت آپلود و نمایش عکس در بخش های مختلف
-- جلوگیری از فعالیت کاربر در صورت محدود شدن حساب
-- به تعلیق در اومدن هر نوع کامت و بلاگ و ... در صورت استفاده از کلمات نامناسب
-- اضافه کردن تگ ها به هر بلاگ
-- قابلیت حذف بلاگ یا سوال یا کامنت توسط کاربر
+![Profile Page](README-pics/Profile.png)
+
+- Includes user’s favorite tags, questions, and blogs  
+- Add or remove tags  
+- Edit user information
+
+![Profile Edit Page](README-pics/profile-edit.png?raw=true)
+![Tag Edit Page](README-pics/tag-edit.png?raw=true)
+
+---
+
+### Future Updates
+
+Because the website is large and feature-rich, and due to limited time, many features are incomplete or missing. Some planned updates include:
+
+- Add loggers  
+- Add sanitizers  
+- Add the ability to view other users’ profiles  
+- Enable image upload and display in different sections  
+- Prevent activity for restricted users  
+- Suspend any comment, blog, etc., containing inappropriate words  
+- Add tags to each blog  
+- Allow users to delete their own blogs, questions, or comments
