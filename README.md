@@ -12,10 +12,10 @@ The website’s front-end is very simple and a bit problematic because it was de
 ### Features
 
 
-- ❔[Forum](#-forum): Choose a topic and ask or answer a question.
-- 📘[Blog](#-blog): View,write and update blogs.
-- 👤[Admin Dashboard](#-admin-dashboard): Manage users and contents shared on the application.
-- 👥[Profile](#-profile): manage your credentials, blogs, forum questions and favorite tags.
+- ❔[Forum](#forum): Choose a topic and ask or answer a question.
+- 📘[Blog](#blog): View,write and update blogs.
+- 👤[Admin Dashboard](#admin-dashboard): Manage users and contents shared on the application.
+- 👥[Profile](#profile): manage your credentials, blogs, forum questions and favorite tags.
 
 ---
 
