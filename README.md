@@ -93,6 +93,55 @@ Each user’s profile page shows their activity and interests.
 
 ## 🚀 Installation & Setup
 
+### Using Docker
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/justAForum.git
+   cd justAForum
+   ```
+
+2. Create **.env** file :
+   ```bash
+   cp ./docker-compose/.env.example .env
+   ```
+
+3. Start Docker containers :
+   ```bash
+   docker compose up -d --build
+   ```
+
+4. Install Composer dependencies (inside PHP container) :
+   ```bash
+   docker compose exec php composer install
+   ```
+
+5. Generate application key :
+   ```bash
+    docker compose exec php php artisan key:generate
+   ```
+
+6. Run migrations and seed :
+   ```bash
+    docker compose exec php php artisan migrate --seed
+   ```
+
+7. Access the application in browser:
+   ```bash
+        # web application on :
+    http://localhost:8080
+    
+       # phpmyadmin on :
+    http://localhost:8383
+
+   ```
+
+
+
+
+
+### Using Git Clone
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/justAForum.git
