@@ -113,17 +113,17 @@ Each user’s profile page shows their activity and interests.
 
 4. Install Composer dependencies (inside PHP container) :
    ```bash
-   docker compose exec php composer install
+   docker compose exec just_a_forum composer install
    ```
 
 5. Generate application key :
    ```bash
-    docker compose exec php php artisan key:generate
+    docker compose exec just_a_forum php artisan key:generate
    ```
 
 6. Run migrations and seed :
    ```bash
-    docker compose exec php php artisan migrate --seed
+    docker compose exec just_a_forum php artisan migrate --seed
    ```
 
 7. Access the application in browser:
