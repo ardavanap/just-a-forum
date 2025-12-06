@@ -97,8 +97,8 @@ Each user’s profile page shows their activity and interests.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/justAForum.git
-   cd justAForum
+   git clone https://github.com/ardavanap/just-a-forum
+   cd just-a-forum
    ```
 
 2. Create **.env** file :
